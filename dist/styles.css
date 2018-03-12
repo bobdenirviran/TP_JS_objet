@@ -1,0 +1,26 @@
+#app,label
+{
+    display:flex;
+}
+#app,#map,body,html
+{
+    margin:0;
+    height:100%;
+}
+#map
+{
+    width:70%;
+}
+#interface
+{
+    width: calc(30%-20px);
+    height: 100%;
+    margin: 0px;
+    padding: 10px;
+}
+label
+{
+    justify-content:space-between;
+    width:250px;
+    margin:5px 0px;
+}

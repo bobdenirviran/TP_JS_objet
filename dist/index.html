@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <title>Shop</title>
+        <!-- $ npm install google-maps -->
+        <!-- clef google maps AIzaSyD_DW3uaJrBKyD8jEaX5BvcwxsnswxO2oE -->
+    </head>
+    <body>
+        <div id="app">
+            <!-- 
+                affichage de la carte des magasin 
+            -->
+            <div id="map">
+            </div>
+            <!-- 
+                affichage de l'interface de saisie 
+            -->
+            <div id="interface">
+                <!-- 
+                    affichage de la saisie d'un magasin
+                -->
+                <span>AJOUT D'UN MAGASIN</span><br>
+                <form id="form-shop">
+                    <label>
+                        <span>Magasin</span>
+                        <input type="text" id="denomination">
+                    </label>
+                    <label>
+                        <span>Latitude</span>
+                        <input type="text" id="latitude">
+                    </label> 
+                    <label>
+                        <span>Longitude</span>
+                        <input type="text" id="longitude">
+                    </label>
+                    <input type="submit" value="Ajouter magasin">
+                </form>
+                <!-- 
+                    affichage de la saisie d'un vendeur
+                -->
+                <br><span>AJOUT D'UN VENDEUR</span><br>
+                <form id="form-seller">
+                    <label>
+                        <span>Nom</span>
+                        <input type="text" id="name">
+                    </label>
+                    <label>
+                        <span>Prenom</span>
+                        <input type="text" id="surname">
+                    </label>
+                    <label>
+                        <span>Magasin</span>
+                        <Select id="shop_seller" size="3">
+                        </select>
+                    </label>
+                    <input type="submit" value="Ajouter vendeur">
+                </form>
+                <!-- 
+                    affichage de la saisie d'un produit
+                -->
+                <br><span>AJOUT D'UN PRODUIT</span><br>
+                <form id="form-product">
+                    <label>
+                        <span>Label</span>
+                        <input type="text" id="label">
+                    </label>
+                    <label>
+                        <span>Prix</span>
+                        <input type="text" id="prix">
+                    </label>
+                    <label>
+                        <span>Image</span>
+                        <input type="file" src="/img" id="image">
+                    </label>
+                    <label>
+                        <span>Magasin</span>
+                        <Select multiple id="shop_product" size="3">
+                        </select>
+                    </label>
+                    <input type="submit" value="Ajouter produit">
+                </form>
+            </div>
+        </div>
+        <script src="main.js">
+        </script>
+    </body>
+    </html>
